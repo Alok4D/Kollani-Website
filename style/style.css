@@ -198,7 +198,7 @@ span{
     position: relative;
 }
 .text-animation span::before{
-    content: "Ceramics Designer";
+    content: "Ceramic Artist";
     color: var(--main-color);
     animation: words 20s infinite;
 }
@@ -220,19 +220,19 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "Ceramics Designer";
+        content: "Ceramic Artist";
     }
     21%,
     40%{
-        content: "Ceramic Artist";
+        content: "Sculpture Artist";
     }
     41%,
     60%{
-        content: "Pottery Designer";
+        /* content: "Pottery Designer"; */
     }
     61%,
     80%{
-        content: "Ceramic Manufacturer";
+        /* content: "Ceramic Manufacturer"; */
     }
     81%,
     100%{
