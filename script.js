@@ -22,4 +22,7 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
+// mix it up portfolio section
+var mixer = mixitup('.portfolio-gallery');
+
 
