@@ -25,6 +25,10 @@
       })();
     </script>
     <!--  -->
+      <!-- DaisyUi -->
+      <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script> -->
+      <!-- DaisyUi end -->
   </head>
   <body>
     <header class="header">
@@ -34,8 +38,10 @@
 
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
+        
         <a href="#education">Education</a>
         <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
         <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -167,24 +173,49 @@
 
     <!-- Skills Section -->
 
-    <section id="portfolio" class="porfolio">
+    <section id="skills" class="porfolio">
       <div class="main-text">
-        <span>What i will do for you</span>
-        <h2>Latest Project</h2>
+        <span class="whatT">What i Will Do For You</span>
+        <h2 class="headingS">Latest Project</h2>
       </div>
 
       <div class="containerS">
         <div class="fillter-bittons">
-          <button class="btn" data-filter="all">All</button>
-          <button class="btn" data-filter=".product">Product</button>
-          <button class="btn" data-filter=".inter">Interacting</button>
-          <button class="btn" data-filter=".ceramic">Ceramic</button>
+          <button class="btn" id="skills-btn" data-filter="all">All</button>
+          <button class="btn" id="skills-btn" data-filter=".ceramic">Ceramic</button>
+          <button class="btn" id="skills-btn" data-filter=".product">Sculpture</button>
+          <button class="btn" id="skills-btn" data-filter=".inter">Pottery</button>
+          <button class="btn" id="skills-btn" data-filter=".inter">Printing</button>
+          <button class="btn" id="skills-btn" data-filter=".inter">Drawing </button>
         </div>
 
         <div class="portfolio-gallery">
-          <div class="port-box mix product">
+          <!-- ceramic card -->
+          <div class="port-box mix ceramic">
             <div class="port-image">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtxsQ6H9x8erLhyVvjfd3_ihrEUd7jqAWjMg&s" alt="">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI63MEw_LfN3i3bC8vcfgxjig8K34qB7vuVA&s" alt="C">
+            </div>
+            <div class="port-content">
+              <h3>Ceramic Design</h3>
+              <p>Ceramic art is art made from ceramic materials, including clay. It may take varied forms, including artistic pottery.</p>
+              <a href=""><i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+
+          <div class="port-box mix ceramic">
+            <div class="port-image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsiGaKaABpbOsXqO6tektg3YoeTEWxLmNvJQ&s" alt="C">
+            </div>
+            <div class="port-content">
+              <h3>Ceramic Design</h3>
+              <p>There is a long history of ceramic art in almost all developed cultures, and often ceramic.</p>
+              <a href=""><i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+
+          <div class="port-box mix ceramic">
+            <div class="port-image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI8-y4wXcwRRFGhvpDIUGAr8-kz0-AILoHxg&s" alt="">
             </div>
             <div class="port-content">
               <h3>Ceramic Design</h3>
@@ -192,6 +223,78 @@
               <a href=""><i class='bx bx-link-external'></i></a>
             </div>
           </div>
+          <div class="port-box mix ceramic">
+            <div class="port-image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGeeE9yiy7oT20if9jjixGgHIjVIhR6OY1HQ&s" alt="">
+            </div>
+            <div class="port-content">
+              <h3>Ceramic Design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis aut iure vero quidem at, aliquid repudiandae facilis tempore totam.</p>
+              <a href=""><i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+          <div class="port-box mix ceramic">
+            <div class="port-image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTimOgKgSBKLKo8bN3C6ZRFtZkwG9TebniJzg&s" alt="">
+            </div>
+            <div class="port-content">
+              <h3>Ceramic Design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis aut iure vero quidem at, aliquid repudiandae facilis tempore totam.</p>
+              <a href=""><i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+          <div class="port-box mix ceramic">
+            <div class="port-image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7I1KPaiYW8Ocj5-ta9P1J4exM6sgeBqPpFQ&s" alt="">
+            </div>
+            <div class="port-content">
+              <h3>Ceramic Design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis aut iure vero quidem at, aliquid repudiandae facilis tempore totam.</p>
+              <a href=""><i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+          <div class="port-box mix ceramic">
+            <div class="port-image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ08Z_cCjsN_DStJcU7ZvUC6vvnshi88xrJmQ&s" alt="">
+            </div>
+            <div class="port-content">
+              <h3>Ceramic Design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis aut iure vero quidem at, aliquid repudiandae facilis tempore totam.</p>
+              <a href=""><i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+          <div class="port-box mix ceramic">
+            <div class="port-image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyCRKRAnEpznJCGC1Z7aiSbvrQUnZuE-5NnA&s" alt="">
+            </div>
+            <div class="port-content">
+              <h3>Ceramic Design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis aut iure vero quidem at, aliquid repudiandae facilis tempore totam.</p>
+              <a href=""><i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+          <div class="port-box mix ceramic">
+            <div class="port-image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxyZZ29aMGJ3WG2frBhllyZ4lJ6u6EPGc82g&s" alt="">
+            </div>
+            <div class="port-content">
+              <h3>Ceramic Design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis aut iure vero quidem at, aliquid repudiandae facilis tempore totam.</p>
+              <a href=""><i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+          <div class="port-box mix ceramic">
+            <div class="port-image">
+              <img src="https://media.istockphoto.com/id/1437243070/photo/female-hands-working-on-pottery-wheel.jpg?s=612x612&w=0&k=20&c=G5T5yoMFm6bzNSyi5XSN4-nu6DaDUnYLQkAvk3sU8WU=" alt="">
+            </div>
+            <div class="port-content">
+              <h3>Ceramic Design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis aut iure vero quidem at, aliquid repudiandae facilis tempore totam.</p>
+              <a href=""><i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+
+           <!-- ceramic card -->
 
           <div class="port-box mix product">
             <div class="port-image">
@@ -224,7 +327,7 @@
               <a href=""><i class='bx bx-link-external'></i></a>
             </div>
           </div>
-          <div class="port-box mix ceramic">
+          <div class="port-box mix ">
             <div class="port-image">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtxsQ6H9x8erLhyVvjfd3_ihrEUd7jqAWjMg&s" alt="">
             </div>
@@ -234,7 +337,7 @@
               <a href=""><i class='bx bx-link-external'></i></a>
             </div>
           </div>
-          <div class="port-box mix ceramic">
+          <div class="port-box mix">
             <div class="port-image">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtxsQ6H9x8erLhyVvjfd3_ihrEUd7jqAWjMg&s" alt="">
             </div>
@@ -244,16 +347,7 @@
               <a href=""><i class='bx bx-link-external'></i></a>
             </div>
           </div>
-          <div class="port-box mix ceramic">
-            <div class="port-image">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtxsQ6H9x8erLhyVvjfd3_ihrEUd7jqAWjMg&s" alt="">
-            </div>
-            <div class="port-content">
-              <h3>Ceramic Design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis aut iure vero quidem at, aliquid repudiandae facilis tempore totam.</p>
-              <a href=""><i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
+       
          
           
         </div>

@@ -412,8 +412,13 @@ span{
 }
 
 /* Skill styles */
+#skills{
+    /* padding: 100px; */
+    background: var(--second-bg-color);
+}
 .fillter-bittons{
-    margin: 2rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
     text-align: center;
 }
 .fillter-bittons .btn{
@@ -426,6 +431,10 @@ span{
     letter-spacing: .4px;
     margin-left: 1.3rem;
     color: var(--text-color);
+}
+#skills-btn{
+    font-size: 12px;
+    color: #00ffee;
 }
 .fillter-bittons .btn:hover{
     color: white;
@@ -505,11 +514,25 @@ span{
     font-size: 1.3rem;
     color: var(--main-color);
 }
+.main-text{
+    text-align: center;
+}
+.whatT{
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.headingS{
+    font-size: 8rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
 /* Skill styles End */
 
 /* testimonials section style */
 .testimonials{
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 .testimonials-box{
     background-size: cover;
