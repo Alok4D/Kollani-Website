@@ -70,13 +70,13 @@
         </div>
       </div>
       <div class="home-img">
-        <a href="https://ibb.co.com/R2gt8Zv"><img src="https://i.ibb.co.com/XXW6HN2/image-1.jpg" alt="image-1"></a>
+        <!-- <a href="https://ibb.co.com/R2gt8Zv"><img src="https://i.ibb.co.com/XXW6HN2/image-1.jpg" alt="image-1"></a> -->
         <!-- <img src="/Image/banner-photo/1737681650865.jpg" alt="Kollani-image"> -->
-        <!-- <a href="https://ibb.co.com/pPN0qKd"
+        <a href="https://ibb.co.com/pPN0qKd"
           ><img
             src="https://i.ibb.co.com/rtq79pH/1737681650865.jpg"
             alt="1737681650865"
-        /></a> -->
+        /></a>
       </div>
     </section>
 
@@ -183,10 +183,10 @@
         <div class="fillter-bittons">
           <button class="btn" id="skills-btn" data-filter="all">All</button>
           <button class="btn" id="skills-btn" data-filter=".ceramic">Ceramic</button>
-          <button class="btn" id="skills-btn" data-filter=".product">Sculpture</button>
-          <button class="btn" id="skills-btn" data-filter=".inter">Pottery</button>
-          <button class="btn" id="skills-btn" data-filter=".inter">Printing</button>
-          <button class="btn" id="skills-btn" data-filter=".inter">Drawing </button>
+          <button class="btn" id="skills-btn" data-filter=".sculpture">Sculpture</button>
+          <button class="btn" id="skills-btn" data-filter=".pottery">Pottery</button>
+          <button class="btn" id="skills-btn" data-filter=".printing">Printing</button>
+          <button class="btn" id="skills-btn" data-filter=".drawing">Drawing </button>
         </div>
 
         <div class="portfolio-gallery">
@@ -296,7 +296,7 @@
 
            <!-- ceramic card -->
 
-          <div class="port-box mix product">
+          <div class="port-box mix sculpture">
             <div class="port-image">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtxsQ6H9x8erLhyVvjfd3_ihrEUd7jqAWjMg&s" alt="">
             </div>
@@ -307,7 +307,7 @@
             </div>
           </div>
 
-          <div class="port-box mix product">
+          <div class="port-box mix sculpture">
             <div class="port-image">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtxsQ6H9x8erLhyVvjfd3_ihrEUd7jqAWjMg&s" alt="">
             </div>
@@ -317,7 +317,7 @@
               <a href=""><i class='bx bx-link-external'></i></a>
             </div>
           </div>
-          <div class="port-box mix inter">
+          <div class="port-box mix drawing">
             <div class="port-image">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtxsQ6H9x8erLhyVvjfd3_ihrEUd7jqAWjMg&s" alt="">
             </div>
@@ -327,7 +327,7 @@
               <a href=""><i class='bx bx-link-external'></i></a>
             </div>
           </div>
-          <div class="port-box mix ">
+          <div class="port-box drawing ">
             <div class="port-image">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtxsQ6H9x8erLhyVvjfd3_ihrEUd7jqAWjMg&s" alt="">
             </div>
@@ -351,6 +351,9 @@
          
           
         </div>
+        
+        <div id="load-more">See All Product</div>
+
       </div>
 
     </section>
@@ -573,7 +576,32 @@
      
     </section>
 
-    <footer class="footer">
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social-iconsF">
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      </ul>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p class="copyright">@ Kollani Rani | All Right Reserved</p>
+    </footer>
+
+
+    <!-- <footer class="footer">
       <div class="social">
         <a href="#"><i class="bx bxl-linkedin"></i></a>
         <a href="#"><i class="bx bxl-youtube"></i></a>
@@ -599,10 +627,31 @@
         </li>
       </ul>
       <p class="copyright">@ Kollani Rani | All Right Reserved</p>
-    </footer>
+    </footer> -->
 
 
     <script src="mixitup.min.js"></script>
     <script src="script.js"></script>
+
+    <!-- <script>
+      let loadMoreBtn = document.querySelector('#load-more');
+      let currentItem = 3;
+
+      loadMoreBtn.onclick = () =>{
+        let boxes = [...document.querySelectorAll('.porfolio .containerS .port-box')];
+        for (var i = currentItem; i < currentItem +3; i++){
+          boxes[i].style.display = 'inline-block';
+        }
+        currentItem += 3;
+        if(currentItem >= boxes.length){
+          loadMoreBtn.style.display = 'none';
+        }
+      }
+    </script>  -->
+
+    <!-- ionicons installation link -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
   </body>
 </html>
