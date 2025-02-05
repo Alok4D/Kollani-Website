@@ -4,48 +4,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Kollani Rani</title>
+    <script src="headerscript.js"></script>
     <link rel="stylesheet" href="style/style.css" />
     <link rel="shortcut icon" href="/Image/logo/WhatsApp Image 2025-01-27 at 23.37.41_ee23ab23.jpg" type="image/x-icon">
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"/>
-
-    <!--  -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <!-- emailJs  -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="contactForm.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "VC585sPtpv9C1PWak",
-        });
-      })();
+      (function () { emailjs.init({ publicKey: "VC585sPtpv9C1PWak", });  })();
     </script>
-    <!--  -->
-      <!-- DaisyUi -->
-      <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-      <script src="https://cdn.tailwindcss.com"></script> -->
-      <!-- DaisyUi end -->
   </head>
   <body>
-    <header class="header">
-      <a href="#home" class="logo">Kollani <span>Rani</span></a>
 
-      <i class="bx bx-menu" id="menu-icon"></i>
+    <!-- 4th time header design  -->
+    <!-- <header class="header">
+      <a href="#" class="logo">Logo</a>
+
+      <input type="checkbox" id="check">
+      <label for="check" class="icons">
+          <i class='bx bx-menu' id="menu-icon" onclick=showSidebar()></i>
+          <i class='bx bx-x' id="close-icon" onclick=hideSidebar()></i>
+      </label>
 
       <nav class="navbar">
+          <a onclick=hideSidebar() href="#" style="--i:0;">Home</a>
+          <a onclick=hideSidebar() href="#education" style="--i:1;">Education</a>
+          <a  onclick=hideSidebar() href="#services" style="--i:2;">Services</a>
+          <a onclick=hideSidebar() href="#skills" style="--i:3;">Skills</a>
+          <a onclick=hideSidebar() href="#testimonials" style="--i:4;">Testimonials</a>
+          <a onclick=hideSidebar() href="#contact" style="--i:5;">Contact</a>
+      </nav>
+  </header> -->
+   <!-- 4th time header design end -->
+
+      <!-- 2nd Time i am  design of new header with html, css and js -->
+       <script>
+     
+
+       </script>
+     <header class="header">
+      <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+          <li onclick=hideSidebar()><a id="" href="#home" class="active">Home</a></li>
+          <li onclick=hideSidebar()><a href="#education">Education</a></li>
+          <li onclick=hideSidebar()><a href="#services">Services</a></li>
+          <li onclick=hideSidebar()><a href="#skills">Skills</a></li>
+          <li onclick=hideSidebar()><a href="#testimonials">Testimonials</a></li>
+          <li onclick=hideSidebar()><a href="#contact">Contact</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#home" class="logo">Kollani<span> Rani</span></a></li>
+          <li class="hideOnMobile"><a href="#home" class="active">Home</a></li>
+          <li class="hideOnMobile"><a href="#education">Education</a></li>
+          <li class="hideOnMobile"><a href="#services">Services</a></li>
+          <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+          <li class="hideOnMobile"><a href="#testimonials">Testimonials</a></li>
+          <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+      </header>
+   
+      <!-- 2nd Time i am design of new header with html, css and js end-->
+    <!-- new header design -->
+     <!-- <nav class=".header">
+      <div>
+        <a href="#home" class="logo">Kollani <span>Rani</span></a>
+      </div>
+      <ul id="menuList">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li> <a href="#services">Services</a></li>
+        <li> <a href="#skills">Skills</a></li>
+        <li> <a href="#testimonials">Testimonials</a></li>
+        <li> <a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-icon">
+        <i class="bx bx-menu" onclick="toggleMenu()"></i>
+      </div>
+     </nav> -->
+    <!-- new header design end -->
+   
+    <!-- <header class="header">
+      <a href="#home" class="logo">Kollani<span> Rani</span></a>
+      <i class="bx bx-menu" id="menu-icon" onclick="toggleMenu()"></i>
+      <nav class="navbar">
         <a href="#home" class="active">Home</a>
-        
         <a href="#education">Education</a>
         <a href="#services">Services</a>
         <a href="#skills">Skills</a>
         <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
       </nav>
-    </header>
+    </header>  -->
+
     <section class="home" id="home">
       <div class="home-content">
         <h1>Hi, It's <span>Kollani</span></h1>
@@ -84,6 +140,7 @@
       <h2 class="heading">Education</h2>
 
       <div class="timeline-items">
+
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-date">2018</div>
@@ -133,6 +190,7 @@
       <h2 class="heading">Services</h2>
 
       <div class="services-container">
+
         <div class="service-box">
           <div class="service-info">
             <h4>Ceramic Design</h4>
@@ -181,12 +239,12 @@
 
       <div class="containerS">
         <div class="fillter-bittons">
-          <button class="btn" id="skills-btn" data-filter="all">All</button>
-          <button class="btn" id="skills-btn" data-filter=".ceramic">Ceramic</button>
-          <button class="btn" id="skills-btn" data-filter=".sculpture">Sculpture</button>
-          <button class="btn" id="skills-btn" data-filter=".pottery">Pottery</button>
-          <button class="btn" id="skills-btn" data-filter=".printing">Printing</button>
-          <button class="btn" id="skills-btn" data-filter=".drawing">Drawing </button>
+          <button class="btn"  data-filter="all">All</button>
+          <button class="btn"  data-filter=".ceramic">Ceramic</button>
+          <button class="btn"  data-filter=".sculpture">Sculpture</button>
+          <button class="btn"  data-filter=".pottery">Pottery</button>
+          <button class="btn"  data-filter=".printing">Printing</button>
+          <button class="btn"  data-filter=".drawing">Drawing </button>
         </div>
 
         <div class="portfolio-gallery">
@@ -202,67 +260,7 @@
             </div>
           </div>
 
-          <div class="port-box mix ceramic">
-            <div class="port-image">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsiGaKaABpbOsXqO6tektg3YoeTEWxLmNvJQ&s" alt="C">
-            </div>
-            <div class="port-content">
-              <h3>Ceramic Design</h3>
-              <p>There is a long history of ceramic art in almost all developed cultures, and often ceramic.</p>
-              <a href=""><i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
-
-          <div class="port-box mix ceramic">
-            <div class="port-image">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI8-y4wXcwRRFGhvpDIUGAr8-kz0-AILoHxg&s" alt="">
-            </div>
-            <div class="port-content">
-              <h3>Ceramic Design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis aut iure vero quidem at, aliquid repudiandae facilis tempore totam.</p>
-              <a href=""><i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
-          <div class="port-box mix ceramic">
-            <div class="port-image">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGeeE9yiy7oT20if9jjixGgHIjVIhR6OY1HQ&s" alt="">
-            </div>
-            <div class="port-content">
-              <h3>Ceramic Design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis aut iure vero quidem at, aliquid repudiandae facilis tempore totam.</p>
-              <a href=""><i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
-          <div class="port-box mix ceramic">
-            <div class="port-image">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTimOgKgSBKLKo8bN3C6ZRFtZkwG9TebniJzg&s" alt="">
-            </div>
-            <div class="port-content">
-              <h3>Ceramic Design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis aut iure vero quidem at, aliquid repudiandae facilis tempore totam.</p>
-              <a href=""><i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
-          <div class="port-box mix ceramic">
-            <div class="port-image">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7I1KPaiYW8Ocj5-ta9P1J4exM6sgeBqPpFQ&s" alt="">
-            </div>
-            <div class="port-content">
-              <h3>Ceramic Design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis aut iure vero quidem at, aliquid repudiandae facilis tempore totam.</p>
-              <a href=""><i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
-          <div class="port-box mix ceramic">
-            <div class="port-image">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ08Z_cCjsN_DStJcU7ZvUC6vvnshi88xrJmQ&s" alt="">
-            </div>
-            <div class="port-content">
-              <h3>Ceramic Design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis aut iure vero quidem at, aliquid repudiandae facilis tempore totam.</p>
-              <a href=""><i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
+        
           <div class="port-box mix ceramic">
             <div class="port-image">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyCRKRAnEpznJCGC1Z7aiSbvrQUnZuE-5NnA&s" alt="">
@@ -317,45 +315,13 @@
               <a href=""><i class='bx bx-link-external'></i></a>
             </div>
           </div>
-          <div class="port-box mix drawing">
-            <div class="port-image">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtxsQ6H9x8erLhyVvjfd3_ihrEUd7jqAWjMg&s" alt="">
-            </div>
-            <div class="port-content">
-              <h3>Ceramic Design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis aut iure vero quidem at, aliquid repudiandae facilis tempore totam.</p>
-              <a href=""><i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
-          <div class="port-box drawing ">
-            <div class="port-image">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtxsQ6H9x8erLhyVvjfd3_ihrEUd7jqAWjMg&s" alt="">
-            </div>
-            <div class="port-content">
-              <h3>Ceramic Design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis aut iure vero quidem at, aliquid repudiandae facilis tempore totam.</p>
-              <a href=""><i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
-          <div class="port-box mix">
-            <div class="port-image">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtxsQ6H9x8erLhyVvjfd3_ihrEUd7jqAWjMg&s" alt="">
-            </div>
-            <div class="port-content">
-              <h3>Ceramic Design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis aut iure vero quidem at, aliquid repudiandae facilis tempore totam.</p>
-              <a href=""><i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
        
-         
           
         </div>
         
         <div id="load-more">See All Product</div>
 
       </div>
-
     </section>
 
      <!-- Skills Section End -->
@@ -384,7 +350,7 @@
           </div>
 
           <div class="testimonial-item">
-            <img style="height: 145px;"
+            <img style="height: 9.0625rem;"
               src="/Image/testimonials-section-photo/222.jpg"
               alt=""
             />
@@ -402,7 +368,7 @@
           </div>
 
           <div class="testimonial-item">
-            <img style="height: 145px;"
+            <img style="height: 9.0625rem;"
               src="https://media.istockphoto.com/id/1159212661/photo/portrait-of-successful-young-asian-businesswoman%C3%A2%C2%A0at-office-colleagues-in-background.jpg?s=612x612&w=0&k=20&c=iXO5_SFF7aEj2x7zLqdhW1ZxzEoPpkSYVo-xs6uAh-k="
               alt=""
             />
@@ -434,7 +400,7 @@
               hours.
               <ul class="info-details">
                 <div>
-                  <div style="display: flex; justify-content: left; gap: 15px">
+                  <div style="display: flex; justify-content: left; gap: .9375rem">
                     <div>
                       <svg
                         class="svgClass"
@@ -450,7 +416,7 @@
                       </svg>
                     </div>
                     <div
-                      style="display: flex; flex-direction: column; gap: 0px"
+                      style="display: flex; flex-direction: column; gap: 0rem"
                     >
                       <span>Address</span>
                       <p>Dinajpur, Bangladesh</p>
@@ -462,9 +428,9 @@
                       display: flex;
                       justify-content: left;
                       align-items: center;
-                      gap: 15px;
-                      margin-bottom: 10px;
-                      margin-top: 10px;
+                      gap: .9375rem;
+                      margin-bottom: .625rem;
+                      margin-top: .625rem;
                     "
                   >
                     <div>
@@ -481,7 +447,7 @@
                       </svg>
                     </div>
                     <div
-                      style="display: flex; flex-direction: column; gap: 0px"
+                      style="display: flex; flex-direction: column; gap: 0rem"
                     >
                       <span>Phone</span>
                       <p>01309312434</p>
@@ -493,7 +459,7 @@
                       display: flex;
                       justify-content: left;
                       align-items: center;
-                      gap: 15px;
+                      gap: .9375rem;
                     "
                   >
                     <div>
@@ -513,7 +479,7 @@
                       </svg>
                     </div>
                     <div
-                      style="display: flex; flex-direction: column; gap: 0px"
+                      style="display: flex; flex-direction: column; gap: 0rem"
                     >
                       <span>Email</span>
                       <p>kollanirani073@gmail.com</p>
@@ -604,12 +570,13 @@
     <script src="mixitup.min.js"></script>
     <script src="script.js"></script>
 
-    <!-- <script>
+   <script>
       let loadMoreBtn = document.querySelector('#load-more');
       let currentItem = 3;
 
       loadMoreBtn.onclick = () =>{
         let boxes = [...document.querySelectorAll('.porfolio .containerS .port-box')];
+        console.log(boxes)
         for (var i = currentItem; i < currentItem +3; i++){
           boxes[i].style.display = 'inline-block';
         }
@@ -618,7 +585,7 @@
           loadMoreBtn.style.display = 'none';
         }
       }
-    </script>  -->
+    </script>  
 
     <!-- ionicons installation link -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
