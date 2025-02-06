@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Kollani Rani</title>
-    <script src="headerscript.js"></script>
     <link rel="stylesheet" href="style/style.css" />
     <link rel="shortcut icon" href="/Image/logo/WhatsApp Image 2025-01-27 at 23.37.41_ee23ab23.jpg" type="image/x-icon">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
@@ -17,91 +16,41 @@
     </script>
   </head>
   <body>
-
-    <!-- 4th time header design  -->
-    <!-- <header class="header">
-      <a href="#" class="logo">Logo</a>
-
-      <input type="checkbox" id="check">
-      <label for="check" class="icons">
-          <i class='bx bx-menu' id="menu-icon" onclick=showSidebar()></i>
-          <i class='bx bx-x' id="close-icon" onclick=hideSidebar()></i>
-      </label>
-
-      <nav class="navbar">
-          <a onclick=hideSidebar() href="#" style="--i:0;">Home</a>
-          <a onclick=hideSidebar() href="#education" style="--i:1;">Education</a>
-          <a  onclick=hideSidebar() href="#services" style="--i:2;">Services</a>
-          <a onclick=hideSidebar() href="#skills" style="--i:3;">Skills</a>
-          <a onclick=hideSidebar() href="#testimonials" style="--i:4;">Testimonials</a>
-          <a onclick=hideSidebar() href="#contact" style="--i:5;">Contact</a>
-      </nav>
-  </header> -->
-   <!-- 4th time header design end -->
-
-      <!-- 2nd Time i am  design of new header with html, css and js -->
-       <script>
-     
-
-       </script>
-     <header class="header">
+    <!-- header -->
+    <header class="header">
       <nav>
         <ul class="sidebar">
-          <li onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
-          <li onclick=hideSidebar()><a id="" href="#home" class="active">Home</a></li>
-          <li onclick=hideSidebar()><a href="#education">Education</a></li>
-          <li onclick=hideSidebar()><a href="#services">Services</a></li>
-          <li onclick=hideSidebar()><a href="#skills">Skills</a></li>
-          <li onclick=hideSidebar()><a href="#testimonials">Testimonials</a></li>
-          <li onclick=hideSidebar()><a href="#contact">Contact</a></li>
+          <li style="cursor: pointer !important;" class="close-icon" onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="3rem"
+              viewBox="0 -960 960 960" width="3rem" fill="currentColor">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg></li>
+          <li onclick=hideSidebar()><a href="#home" class="navlink active">Home</a></li>
+          <li onclick=hideSidebar()><a href="#education" class="navlink">Education</a></li>
+          <li onclick=hideSidebar()><a href="#services" class="navlink">Services</a></li>
+          <li onclick=hideSidebar()><a href="#skills" class="navlink">Skills</a></li>
+          <li onclick=hideSidebar()><a href="#testimonials" class="navlink">Testimonials</a></li>
+          <li onclick=hideSidebar()><a href="#contact" class="navlink">Contact</a></li>
         </ul>
-
+  
         <ul>
-          <li><a href="#home" class="logo">Kollani<span> Rani</span></a></li>
-          <li class="hideOnMobile"><a href="#home" class="active">Home</a></li>
-          <li class="hideOnMobile"><a href="#education">Education</a></li>
-          <li class="hideOnMobile"><a href="#services">Services</a></li>
-          <li class="hideOnMobile"><a href="#skills">Skills</a></li>
-          <li class="hideOnMobile"><a href="#testimonials">Testimonials</a></li>
-          <li class="hideOnMobile"><a href="#contact">Contact</a></li>
-          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+          <li class="logo">Kollani<span> Rani</span></li>
+          <li class="hideOnMobile"><a href="#home" class="navlink active">Home</a></li>
+          <li class="hideOnMobile"><a href="#education" class="navlink">Education</a></li>
+          <li class="hideOnMobile"><a href="#services" class="navlink">Services</a></li>
+          <li class="hideOnMobile"><a href="#skills" class="navlink">Skills</a></li>
+          <li class="hideOnMobile"><a href="#testimonials" class="navlink">Testimonials</a></li>
+          <li class="hideOnMobile"><a href="#contact" class="navlink">Contact</a></li>
+          <li style="cursor: pointer !important;" class="menu-button" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg"
+              height="3rem" viewBox="0 -960 960 960" width="3rem" fill="currentColor">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg></li>
         </ul>
       </nav>
-      </header>
-   
-      <!-- 2nd Time i am design of new header with html, css and js end-->
-    <!-- new header design -->
-     <!-- <nav class=".header">
-      <div>
-        <a href="#home" class="logo">Kollani <span>Rani</span></a>
-      </div>
-      <ul id="menuList">
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#education">Education</a></li>
-        <li> <a href="#services">Services</a></li>
-        <li> <a href="#skills">Skills</a></li>
-        <li> <a href="#testimonials">Testimonials</a></li>
-        <li> <a href="#contact">Contact</a></li>
-      </ul>
-      <div class="menu-icon">
-        <i class="bx bx-menu" onclick="toggleMenu()"></i>
-      </div>
-     </nav> -->
-    <!-- new header design end -->
-   
-    <!-- <header class="header">
-      <a href="#home" class="logo">Kollani<span> Rani</span></a>
-      <i class="bx bx-menu" id="menu-icon" onclick="toggleMenu()"></i>
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#education">Education</a>
-        <a href="#services">Services</a>
-        <a href="#skills">Skills</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>  -->
+    </header>
+     <!-- header End -->
 
+     <!-- Banner -->
     <section class="home" id="home">
       <div class="home-content">
         <h1>Hi, It's <span>Kollani</span></h1>
@@ -135,7 +84,9 @@
         /></a> -->
       </div>
     </section>
+     <!-- Banner End -->
 
+     <!-- Education section -->
     <section class="education" id="education">
       <h2 class="heading">Education</h2>
 
@@ -185,7 +136,9 @@
         </div>
       </div>
     </section>
+      <!-- Education section end -->
 
+    <!-- Services section -->
     <section class="services" id="services">
       <h2 class="heading">Services</h2>
 
@@ -228,6 +181,7 @@
         </div>
       </div>
     </section>
+      <!-- Services section end -->
 
     <!-- Skills Section -->
 
@@ -323,9 +277,9 @@
 
       </div>
     </section>
-
      <!-- Skills Section End -->
 
+    <!-- Testimonials section -->
     <div class="testimonials" id="testimonials">
       <div class="testimonials-box">
         <h2 class="heading">Testimonials</h2>
@@ -387,7 +341,9 @@
         </div>
       </div>
     </div>
+     <!-- Testimonials section end -->
 
+    <!-- Contact section -->
     <div class="contact" id="contact">
       <h2 class="heading">Contact <span>Me</span></h2>
 
@@ -537,6 +493,7 @@
         </div>
       </div>
     </div>
+        <!-- Contact section end -->
 
     <div class="footer-parent">
       <footer>
@@ -566,7 +523,7 @@
 
    
 
-
+    <script src="headerscript.js"></script>
     <script src="mixitup.min.js"></script>
     <script src="script.js"></script>
 

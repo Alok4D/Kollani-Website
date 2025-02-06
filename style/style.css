@@ -27,117 +27,8 @@ section{
     padding: 10rem 12% 10rem;
 }
 
-/* 4th time  */
-/* .header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1.3rem 10%;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
 
-.header::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, .1);
-    backdrop-filter: blur(50px);
-    z-index: -1;
-}
-
-
-.logo{
-    font-size: 2rem;
-    color: white;
-    text-decoration: none;
-    font-weight: 700;
-}
-.navbar a{
-    font-size: 1.15rem;
-    color: rgb(73, 72, 72);
-    text-decoration: none;
-    font-weight: 300;
-    margin-left: 2.5rem;
-}
-#check{
-    display: none;
-}
-
-.icons{
-    position: absolute;
-    right: 5%;
-    font-size: 2.8rem;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-}
-
-
-@media (max-width: 992px) {
-    .header{
-        padding: 1.3rem 5%;
-    }
-}
-@media (max-width: 768px) {
-    .icons{
-        display: inline-flex;
-    }
-    .icons #close-icon{
-        display: none;
-    }
-
-    #check:checked~.icons #menu-icon{
-        display: none;
-    }
-    .icons #close-icon{
-        display: none;
-    }
-    #check:checked~.icons #close-icon {
-        display: block;
-    }
-
-    .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        height: 0;
-        background: rgba(0, 0, 0, .1);
-        backdrop-filter: blur(50px);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-        overflow: hidden;
-        transition: .3s ease;
-    }
-    #check:checked~.navbar{
-        height: 17.7rem;
-    }
-    .navbar a{
-        display: block;
-        font-size: 1.1rem;
-        margin: 1.5rem 0;
-        text-align: center;
-        transform: translateY(-50px);
-        transition: .3s ease;
-        opacity: 0;
-    }
-    #check:checked~.navbar a{
-        transform: translateY(0);
-        transition-delay: calc(.15s * var(--i));
-        opacity: 1;
-    }
-} */
-/* 4th time end */
-
-
-/* 2nd header */
+/* header styles */
 .header{
     position: fixed;
     top: 0;
@@ -176,7 +67,6 @@ nav li {
 nav a {
     font-size: 1.8rem;
     color: var(--text-color);
-    /* margin-left: 4rem; */
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
@@ -191,6 +81,7 @@ nav li:first-child{
     margin-right: auto;
 }
 .sidebar{
+   padding: 2.5rem 10%;
     position: fixed;
     top: 0;
     right: 0;
@@ -215,6 +106,18 @@ nav li:first-child{
     display: none;
 }
 
+.close-icon svg{
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+   
+    background-color: rgb(122, 121, 121);
+    
+}
+.close-icon:hover{
+    color: rgb(248, 40, 40);
+   
+}
+
 @media (max-width: 800px) {
     .hideOnMobile{
         display: none;
@@ -231,91 +134,6 @@ nav li:first-child{
 }
 
 /* 2nd header end */
-
-/* new header  */
-/* nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 4rem 12% 4rem;
-    background: rgb(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 5;
-}
-.logo{
-    font-size: 3rem;
-    color: var(--text-color);
-    font-weight: 800;
-    cursor: pointer;
-    transition: 03s ease;
-}
-.logo:hover{
-    transform: scale(1.1);
-}
-.logo span{
-    text-shadow: 0 0 25px var(--main-color);
-}
-
-.newL{
-    color: white;
-}
-nav ul{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-nav ul li{
-    list-style-type: none;
-}
-nav ul li a{
-
-    font-size: 1.8rem;
-    color: var(--text-color);
-    margin-left: 4rem;
-    font-weight: 500;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
-}
-nav ul li a:hover,
-nav ul li a.active{
-    color: var(--main-color);
-    border-bottom: 3px solid var(--main-color);
-}
-.menu-icon{
-    display: none;
-}
-.menu-icon i{
-    color: #fff;
-    font-size: 30px;
-   
-}
-@media (max-width:600px){
-    nav ul{
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        text-align: center;
-        background: #004274;
-        gap: 0;
-        overflow: hidden;
-    }
-    nav ul li{
-        padding: 20px;
-    }
-    .menu-icon{
-        display: block;
-    }
-    #menuList{
-        transition: all 0.5s;
-    }
-} */
-/*new headers styles end  */
 
 /* header */
 /* .header{
@@ -1373,9 +1191,11 @@ footer .wave#wave4
         padding: 0;
     }
     .education{
-        padding-top: 40px;
+        padding: 40px 40px 40px 12px;
+
        
     }
+    
     .education h2{
         margin-bottom: 35px;
     }
